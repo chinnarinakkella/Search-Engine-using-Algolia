@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search engine</title>
+</head>
+<body>
+    <h1>Search Engine</h1>
+    <input class="searchInput" type="text" placeholder="search your text here">
+    <div class="prodcts"> </div>
+</body>
+<script type="module" src="./main.js"></script>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+    body{
+        background: linear-gradient(to right, #FFCC80, #FFFFFF, #C5E1A5 );
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    h1{
+        font-size: 4.5rem;
+    }
+    input{
+        padding: 0.8rem;
+        width: 70%;
+        border-radius: 20px;
+        font-size: 1rem;
+    }
+    .prodcts{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin: 1rem;
+        gap: 2rem;
+    }
+    .prodcts .prodct{
+        border: 2px solid black;
+        padding: 0.5rem;
+        border-radius: 15px;
+        background-color: white;
+    }
+    .prodcts .prodct img{
+        height: 7rem;
+        border-radius: 15px;
+    }
+    button{
+        padding: 0.6rem;
+        border-radius: 10px;
+        width: 50%;
+        background-color: #A9CCE3;
+    }
+    img{
+        height: 7rem;
+        border-radius: 20px;
+    }
+
+</style>
